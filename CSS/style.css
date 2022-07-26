@@ -1,0 +1,26 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+}
+.partie-gauche{
+    width:30%;
+    background-color: #E06200;
+}
+.partie-droite{
+    width: 70%;
+    background-color: #2C4A55;
+}
+.prenom-nom{
+    text-transform: uppercase;
+    color: white;
+}
+#maxime{
+    font-weight: 300;
+}
+#camaille{
+    font-weight: bold;
+}
+.profession{
+    text-transform: uppercase;
+    color: white;
+}
