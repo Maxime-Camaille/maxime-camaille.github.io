@@ -1,0 +1,271 @@
+.about-wrap {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 80%;
+  margin: 0 auto 6rem auto;
+}
+.about-wrap h3 {
+  color: #fff;
+  font-size: 88px;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+.about-wrap h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  left: 0px;
+  top: 15%;
+  height: 5px;
+  transition: 0.5s cubic-bezier(0.17, 0.17, 0.41, 1);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.22592787114845936) 100%
+  );
+}
+.about-wrap h3:hover:after {
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.cardDescription {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #c0b3d0;
+  text-align: left;
+  padding: 0 5rem 0 5rem;
+}
+.cardDescription p {
+  margin-bottom: 1rem;
+}
+.cardDescription p span {
+  color: #a56dff;
+}
+.cardPicture {
+  padding-left: 5rem;
+}
+.identity{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.identity div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+.identity div span{
+margin-right: 0.5rem;
+}
+.identity p{
+    background: #B9B1FF;
+    background: radial-gradient(circle farthest-side at center center, #B9B1FF 0%, #A2E3FB 56%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;;
+}
+.cercle {
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #fff;
+  top: -4px;
+  left: -4px;
+  position: absolute;
+}
+.front-face,
+.contents,
+.back-face {
+  position: absolute;
+}
+.Picture {
+  height: 400px;
+  width: 400px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.front-face,
+.back-face {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(
+      rgba(80, 80, 80, 0.096),
+      rgba(138, 138, 138, 0.459)
+    ),
+    url("../../assets/images/photo-de-profil.jpg");
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0deg);
+  border-radius: 50%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.contents.front {
+  top: 80%;
+}
+.contents {
+  left: 0%;
+  top: 50%;
+  width: 100%;
+  perspective: 1000px;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+}
+.front p {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 600;
+}
+.front span {
+  font-size: 23px;
+  color: white;
+  font-style: italic;
+}
+.front p:after {
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.back-face {
+  transform: rotateY(180deg);
+  background: rgb(103, 67, 188);
+  background: radial-gradient(
+    circle,
+    rgba(103, 67, 188, 1) 0%,
+    rgba(176, 107, 235, 1) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.back {
+  color: white;
+}
+.contents.back {
+  display: flex;
+  flex-direction: column;
+}
+.back .mail-link {
+  font-size: 20px;
+  margin: 0 0.7vw;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  transition: cubic-bezier(0.17, 0.17, 0.41, 1);
+  padding: 10px;
+}
+.back .mail-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  width: 0%;
+  left: 15%;
+  height: 3px;
+  transition: 0.5s cubic-bezier(0.17, 0.17, 0.41, 1);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.22592787114845936) 100%
+  );
+}
+.back .mail-link:hover::before {
+  width: 100%;
+}
+.back .mail-link:visited {
+  color: #fff;
+}
+.back .mail-link:hover:after {
+  width: 70%;
+}
+
+.back p {
+  font-size: 20px;
+  margin: 0 0.7vw 2rem 0.7vw;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  transition: cubic-bezier(0.17, 0.17, 0.41, 1);
+  padding: 10px;
+}
+.back p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  width: 0%;
+  left: 32%;
+  height: 3px;
+  transition: 0.5s cubic-bezier(0.17, 0.17, 0.41, 1);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.22592787114845936) 100%
+  );
+}
+.back p:hover::before {
+  width: 100%;
+}
+.back p:hover:after {
+  width: 35%;
+}
+.back h4 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.icons {
+  margin: px 0;
+  display: block;
+}
+a.fab {
+  color: #0b66c2;
+  font-size: 25px;
+  font-weight: 800;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  line-height: 50px;
+  cursor: pointer;
+  display: inline-block;
+}
+.Picture:hover > .back-face {
+  transform: rotateY(0deg);
+}
+.Picture:hover > .front-face {
+  transform: rotateY(-180deg);
+}
