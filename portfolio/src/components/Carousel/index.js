@@ -1,5 +1,5 @@
 import "./styles.css";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import html from '../../assets/images/html.png';
 import css from '../../assets/images/css.png';
 import javascript from '../../assets/images/javascript.png';

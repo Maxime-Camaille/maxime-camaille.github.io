@@ -1,29 +1,29 @@
-.homepage{
+.HomeSection {
   flex: 1 0 auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
-.statique-background-container{
-    height: 312%;
-    left: -50%;
-    position: fixed;
-    top: -100%;
-    width: 200%;
-    z-index: -1;
+.statique-background-container {
+  height: 312%;
+  left: -50%;
+  position: fixed;
+  top: -100%;
+  width: 200%;
+  z-index: -1;
 }
-.statique-background-container img{
+.statique-background-container img {
   height: 100%;
-    width: 100%;
+  width: 100%;
 }
-.bg{
+.bg {
   opacity: 0;
-  transition: opacity .4s ease;
-  }
-  .opacity{
-    opacity: 1;
-  }
-.home-page{
+  transition: opacity 0.4s ease;
+}
+.opacity {
+  opacity: 1;
+}
+.home-page {
   background: linear-gradient(90deg, #11052b8a, #4e416669, #180d3375);
   background-size: 300% 300%;
   animation: gradient 10s alternate infinite;
@@ -43,28 +43,32 @@
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
-.bigHeader-container{
+.bigHeader-container {
   max-width: 80%;
   padding: 0 1.6rem;
   margin: 15rem auto;
   text-align: left;
 }
-.bigHeader__p1{
-  color: #A56DFF;
+.bigHeader__p1 {
+  color: #a56dff;
   font-size: 37px;
   line-height: 41px;
   font-weight: 600;
   margin: 1.2rem auto;
 }
-.bigHeader-container h1{
-  color: #FFF;
+.bigHeader-container h1 {
+  color: #fff;
   font-size: 88px;
   font-weight: 600;
   margin: 1rem auto;
 }
-.bigHeader-container h2{
-  background: #B9B1FF;
-  background: radial-gradient(circle farthest-side at center center, #B9B1FF 0%, #A2E3FB 56%);
+.bigHeader-container h2 {
+  background: #b9b1ff;
+  background: radial-gradient(
+    circle farthest-side at center center,
+    #b9b1ff 0%,
+    #a2e3fb 56%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 80px;
@@ -73,20 +77,26 @@
   margin: 1rem auto;
   display: inline-block;
 }
-.clignotement{
+.clignotement {
   font-size: 70px;
   border-right: 0.08em solid #666;
   animation-duration: 1s;
-   animation-name: clignoter;
-   animation-iteration-count: infinite;
-   transition: none;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
 }
 @keyframes clignoter {
-  0%   { opacity:1; }
-  40%   {opacity:0; }
-  100% { opacity:1; }
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.bigHeader__p2{
+.bigHeader__p2 {
   color: #c0b3d0;
   font-size: 22px;
   line-height: 31px;
@@ -96,18 +106,18 @@
   max-width: 50%;
   text-align: left;
 }
-.bigHeader-container button{
-  background: rgba(255,255,255,0.5);
+.bigHeader-container button {
+  background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
   padding: 1rem 2rem;
   font-size: 37px;
   line-height: 41px;
   font-weight: 500;
-  color:#000;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,10 +126,10 @@
   position: relative;
   margin-top: 4em;
 }
-.bigHeader-container button:hover{
-  color:#FFF;
+.bigHeader-container button:hover {
+  color: #fff;
 }
-.material-symbols-outlined{
+.material-symbols-outlined {
   font-size: 50px;
   margin-left: 1rem;
   padding-top: 0.2rem;
@@ -137,7 +147,7 @@
   margin: 7rem auto 0 auto;
 }
 .icon-scroll:before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   background: #fff;
@@ -185,39 +195,39 @@
   }
 }
 
-
-
-
-
-  @media only screen and (min-width: 375px) and (max-width: 768px){
-    .statique-background-container{
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .statique-background-container {
     height: 312%;
     width: 345%;
   }
-  .bigHeader-container{
+  .bigHeader-container {
     margin: 8rem auto;
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: center;
     max-width: 100%;
   }
-  .bigHeader__p1{
-    color: #A56DFF;
+  .bigHeader__p1 {
+    color: #a56dff;
     font-size: 20px;
     line-height: 22px;
     font-weight: 600;
     margin: 1.2rem auto;
   }
-  .bigHeader-container h1{
-    color: #FFF;
+  .bigHeader-container h1 {
+    color: #fff;
     font-size: 60px;
     line-height: 72px;
     font-weight: 600;
     margin: 1rem auto;
   }
-  .bigHeader-container h2{
-    background: #B9B1FF;
-    background: radial-gradient(circle farthest-side at center center, #B9B1FF 0%, #A2E3FB 56%);
+  .bigHeader-container h2 {
+    background: #b9b1ff;
+    background: radial-gradient(
+      circle farthest-side at center center,
+      #b9b1ff 0%,
+      #a2e3fb 56%
+    );
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 48px;
@@ -226,20 +236,26 @@
     margin: 1rem auto;
     display: inline-block;
   }
-  .clignotement{
+  .clignotement {
     font-size: 30px;
     border-right: 0.1em solid #666;
     animation-duration: 1s;
-     animation-name: clignoter;
-     animation-iteration-count: infinite;
-     transition: none;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
   }
   @keyframes clignoter {
-    0%   { opacity:1; }
-    40%   {opacity:0; }
-    100% { opacity:1; }
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  .bigHeader__p2{
+  .bigHeader__p2 {
     color: #c0b3d0;
     font-size: 22px;
     line-height: 31px;
@@ -248,17 +264,17 @@
     display: inline-block;
     text-align: center;
   }
-  .bigHeader-container button{
-    background: rgba(255,255,255,0.5);
+  .bigHeader-container button {
+    background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 10px;
     padding: 1rem 2rem;
     font-size: 20px;
     line-height: 41px;
     font-weight: 600;
-    color:#000;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,10 +283,10 @@
     position: relative;
     margin: 4em auto;
   }
-  .bigHeader-container button:hover{
-    color:#FFF;
+  .bigHeader-container button:hover {
+    color: #fff;
   }
-  .material-symbols-outlined{
+  .material-symbols-outlined {
     font-size: 40px;
     padding: 0;
   }

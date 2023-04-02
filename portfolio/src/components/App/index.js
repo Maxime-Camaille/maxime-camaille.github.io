@@ -1,10 +1,9 @@
-import Header from "../Header";
-import HomePage from "../HomePage";
-import About from "../About";
-import "./App.css";
+import "./styles.css";
 import Loader from "../Loader";
 import React, { useState, useEffect } from "react";
-import Carousel from "../Carousel";
+import { Routes, Route } from "react-router-dom";
+import Accueil from "../Accueil";
+import About from "../About";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,10 +16,10 @@ function App() {
     <Loader />
   ) : (
     <div className="App">
-      <Header />
-      <HomePage />
-      <About />
-      <Carousel />
+      <Routes>
+      <Route path="/" element={<Accueil />} />
+      <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }

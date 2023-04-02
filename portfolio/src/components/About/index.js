@@ -2,7 +2,7 @@ import "./styles.css";
 import React from "react";
 function About() {
   return (
-    <section className="about-wrap">
+    <section className="about-wrap" id="about">
       <h3>À propos</h3>
       <div className="card">
         <div className="cardDescription">
@@ -56,6 +56,7 @@ function About() {
                   <a
                     class="fab fa-linkedin-in"
                     href="https://www.linkedin.com/in/maxime-camaille/"
+                    // eslint-disable-next-line
                     target="_blank"
                   >
                     in

@@ -3,13 +3,14 @@ import background from "../../assets/images/statique-background.jpg";
 import React from "react";
 import { useState, useEffect } from "react";
 
-function HomePage() {
+function HomeSection() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Développeur Web", "Adepte de nouvelles technologies","Fan de domotique","Gamer dans l'âme"];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
+
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -41,7 +42,7 @@ function HomePage() {
     }
 
   return (
-    <section className="homePage">
+    <section className="HomeSection" id="/">
       <div className="statique-background-container">
         <div className="home-page">
           <img className="bg opacity" src={background} alt="background" />
@@ -72,4 +73,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomeSection;
