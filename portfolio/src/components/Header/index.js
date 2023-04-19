@@ -34,7 +34,7 @@ Header() {
               <Link to="about" spy={true} smooth={true} offset={-200} duration={500} style={{cursor : "pointer"}}>À propos</Link>
             </li>
             <li className={`${showLinks ? 'fade' : ''}`}>
-            <Link to="" spy={true} smooth={true} offset={50} duration={500} style={{cursor : "pointer"}}>CV en ligne</Link>
+            <Link to="cv" spy={true} smooth={true} offset={50} duration={500} style={{cursor : "pointer"}}>CV en ligne</Link>
             </li>
             <li className={`${showLinks ? 'fade' : ''}`}>
             <Link to="" spy={true} smooth={true} offset={50} duration={500} style={{cursor : "pointer"}}>Projets</Link>
