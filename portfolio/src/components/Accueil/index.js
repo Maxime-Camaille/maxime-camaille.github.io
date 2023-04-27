@@ -4,6 +4,7 @@ import Header from "../Header";
 import HomeSection from "../HomeSection";
 import About from "../About";
 import Carousel from "../Carousel";
+import CV from "../CV";
 
 function Accueil() {
   return (
@@ -12,6 +13,7 @@ function Accueil() {
       <HomeSection />
       <About />
       <Carousel />
+      <CV />
       </>
   );
 }
